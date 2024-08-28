@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import WeatherIcon from "./WeatherIcon";
+import WeatherContext from "../context/weather.context";
 
 function DailyForecastWidget({ data }) {
+  const {units} = useContext(WeatherContext);
+
   const {
     day, 
     icon, 
@@ -38,14 +42,14 @@ function DailyForecastWidget({ data }) {
             </div>
             <div className="temperature">
               <div className="max">
-                {Math.round(temperature_max)} ­­°C
+                {Math.round(temperature_max)} ­­{units.temperature}
               </div>
               <div className="min">
-                {Math.round(temperature_min)} ­­°C
+                {Math.round(temperature_min)} ­­{units.temperature}
               </div>
             </div>
             <div className="precipitation">
-              {Math.round(precipitation.total)} mm/h
+              {Math.round(precipitation.total)} {units.precipitation}
             </div>
         </div>
     </div>

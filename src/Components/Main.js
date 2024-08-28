@@ -15,7 +15,7 @@ function Main() {
         <Loader />
       ) : (
         <>
-          <CurrentWeather data={currentWeather}/>
+          <CurrentWeather data={currentWeather} />
 
           <Forecast 
             type='hourly' 

@@ -7,12 +7,10 @@ import { WeatherProvider } from './context/weather.context';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <WeatherProvider>
     <ThemeProvider>
       <WeatherProvider>
         <App />
       </WeatherProvider>
     </ThemeProvider>
-    </WeatherProvider>
   </React.StrictMode>
 );
