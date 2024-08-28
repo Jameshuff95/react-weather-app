@@ -19,8 +19,7 @@ function WeatherProvider({ children }) {
         async function _getWeatherData() {
             setLoading(true);
 
-            
-            {/* Current Weather */}
+            // Current Weather
             const cw = await getWeatherData(
                 'current', 
                 place.place_id, 
@@ -29,7 +28,7 @@ function WeatherProvider({ children }) {
             setCurrentWeather(cw.current);
             setUnits(UNITS[cw.units]);
 
-            {/* Hourly Forecast */}
+            // Hourly Forecast
             const hf = await getWeatherData(
                 'hourly', 
                 place.place_id, 
@@ -37,7 +36,7 @@ function WeatherProvider({ children }) {
             );
             setHourlyForecast(hf.hourly.data);
 
-            {/* Daily Forecast */}
+            // Daily Forecast
             const df = await getWeatherData(
                 'daily', 
                 place.place_id, 
