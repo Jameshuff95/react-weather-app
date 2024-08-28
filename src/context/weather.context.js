@@ -16,17 +16,17 @@ function WeatherProvider({ children }) {
             setLoading(true);
 
             const current_weather = await getWeatherData (
-                'current', place.place_id, 'auto'
+                "current", place.place_id, "auto"
             );
             setCurrentWeather(current_weather.current);
 
             const hourly_forecast = await getWeatherData (
-                'hourly', place.place_id, 'auto'
+                "hourly", place.place_id, "auto"
             );
-            setHourlyForecast(hourly_forecast.data);
+            setHourlyForecast(hourly_forecast.hourly.data);
 
             const daily_forecast = await getWeatherData (
-                'daily', place.place_id, 'auto'
+                "daily", place.place_id, "auto"
             );
             setDailyForecast(daily_forecast.daily.data);
 
