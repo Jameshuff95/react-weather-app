@@ -1,18 +1,23 @@
 import '../styles/components/Settings.scss';
-import WeatherContext from '../context/theme.context';
+import ThemeContext from '../context/theme.context';
 import { useContext } from 'react';
 
 function Settings() {
-  const {dark} = useContext(WeatherContext);
+  const {dark, setDark, saveThemeToLocalStorage} = useContext(ThemeContext);
+
+  const toggleTheme = () => {
+    setDark((prevDark) => !prevDark);
+    saveThemeToLocalStorage(!dark);
+  };
 
   return (
     <div className="Settings">
       <div className="theme-toggler">
-        <div className="theme-buttons">
-          <div className="light-theme-btn ">
+        <div className="theme-buttons" onClick={toggleTheme}>
+          <div className={`light-theme-btn ${dark ? '' : 'active'}`}>
             <i className="bi bi-sun"></i>
           </div>
-          <div className="dark-theme-btn active">
+          <div className={`dark-theme-btn ${dark ? 'active' : ''}`}>
             <i className="bi bi-moon"></i>
           </div>
         </div>
