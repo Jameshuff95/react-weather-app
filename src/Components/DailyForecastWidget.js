@@ -57,3 +57,4 @@ function DailyForecastWidget({ data }) {
 }
 
 export default DailyForecastWidget
+
