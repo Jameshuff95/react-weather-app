@@ -60,7 +60,7 @@ function HourlyForecastWidget({ data }) {
           {Math.round(temperature)} {units.temperature}
         </div>
         <div className="precipitation">
-          {Math.round(precipitation.total)} {units.temperature}
+          {Math.round(precipitation.total)} {units.precipitation}
         </div>
         <div className="wind">
           <div className="speed">
