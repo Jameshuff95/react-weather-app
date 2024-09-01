@@ -5,9 +5,11 @@ function Place() {
   const { place } = useContext(WeatherContext);
 
   return (
-    <div className='Place'>
+    <div className='place'>
       <i class="bi bi-geo-alt-fill"></i> {' '}
-      <b>{place.name}</b>, {' '} {place.country}
+      <div>
+        <b>{place.name},</b> {' '} {place.adm_area1}
+      </div>
     </div>
   )
 }

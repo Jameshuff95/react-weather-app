@@ -1,12 +1,12 @@
 export const DEFAULT_PLACE = {
-    name:"London",
-    place_id:"london",
-    adm_area1:"England",
-    adm_area2:"Greater London",
-    country:"United Kingdom",
-    lat:"51.50853N",
-    lon:"0.12574W",
-    timezone:"Europe/London",
+    name:"North Middletown",
+    place_id:"north-middletown-4302734",
+    adm_area1:"Kentucky",
+    adm_area2:"Bourbon",
+    country:"United States of America",
+    lat:"38.14508N",
+    lon:"84.11132W",
+    timezone:"America/New_York",
     type:"settlement"
 };
 

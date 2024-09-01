@@ -3,9 +3,12 @@
 .Settings {
   display: flex;
   font-size: 1.25rem;
+  justify-content: space-around;
+  width: 25%;
 
   .theme-toggler {
     $size: 25px;
+    
     .theme-buttons {
       cursor: pointer;
 
@@ -26,8 +29,8 @@
       }
     }
   }
+
   .settings-btn {
-    margin-left: 1rem;
     cursor: pointer;
   }
   .settings-menu {

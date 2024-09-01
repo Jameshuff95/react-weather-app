@@ -5,19 +5,21 @@
   border: 1px solid var(--secondary-text-color);
   border-radius: 20px;
   padding: 0 1rem;
+  width: 35%;
 
   .search-icon,
   .search-input input {
     height: 40px;
   }
+
   .search-icon {
     display: flex;
     justify-content: center;
     align-items: center;
-
     font-size: 1.3rem;
     padding-right: 1rem;
   }
+
   .search-input input {
     background-color: transparent;
     color: var(--primary-text-color);
@@ -26,6 +28,7 @@
     font-size: 1rem;
   }
 }
+
 .search-results {
   border-radius: 0.5rem;
 

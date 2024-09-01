@@ -101,3 +101,4 @@ function CurrentWeather({data}) {
 }
 
 export default CurrentWeather
+

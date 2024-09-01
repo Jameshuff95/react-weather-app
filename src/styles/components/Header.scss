@@ -3,17 +3,25 @@
 .Header {
   background-color: var(--header-bg-color);
   height: $header-height;
-
   display: flex;
   align-items: center;
-  justify-content: space-around;
-
+  justify-content: space-between;
   position: relative;
+  padding: 0 1rem;
 
   .place {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    display: flex;
+
     i {
       margin-right: 0.25rem;
+      display: flex;
+      align-items: center;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
