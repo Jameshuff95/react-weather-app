@@ -11,7 +11,7 @@ function DailyForecastWidget({ data }) {
     summary, 
     temperature_max, 
     temperature_min, 
-    precipitation
+    // precipitation
   } = data;
 
   // date format
