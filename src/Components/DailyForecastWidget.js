@@ -48,9 +48,11 @@ function DailyForecastWidget({ data }) {
                 {Math.round(temperature_min)} ­­{units.temperature}
               </div>
             </div>
+            {/*}
             <div className="precipitation">
               {Math.round(precipitation.total)} {units.precipitation}
             </div>
+            */}
         </div>
     </div>
   )
